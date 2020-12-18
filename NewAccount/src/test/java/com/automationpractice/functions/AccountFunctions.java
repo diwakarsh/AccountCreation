@@ -18,6 +18,7 @@ import GUIUtils.Misc;
 
 public class AccountFunctions
 {
+	//Navigate to Account Page
 	public static void navigateToCreateAccountPage(WebDriver driver,ExtentTest reportMessage,Map<Object,Object>testData) throws IOException
 	{
 		String emailAddress=(String) testData.get("EmailAddress");
