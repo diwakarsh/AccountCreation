@@ -16,7 +16,7 @@ public class RegisterNewAccount extends Base
 	@Test(dataProvider="Data",dataProviderClass = Data_Supplier.class)
 	public void CreateAccount(Map<Object,Object> dataMap) throws IOException 
 	{
-		
+	
 		reportMessage=report.createTest("Register New Account");
 		ExtentTest signInReport= reportMessage.createNode("HomePage");
 		AccountFunctions.navigateToCreateAccountPage(driver, signInReport, dataMap);
