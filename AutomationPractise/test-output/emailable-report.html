@@ -9,11 +9,80 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">NewAccount</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,185</td><td></td><td></td></tr>
+<tr><td><a href="#t0">NewAccount</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">24,371</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">DemoTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">24,375</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NewAccount &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testCases.RegisterNewAccount</td><td><a href="#m0">CreateAccount</a></td><td rowspan="2">1611501492854</td><td rowspan="2">10388</td></tr><tr class="passedeven"><td><a href="#m1">CreateAccount</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NewAccount &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testCases.RegisterNewAccount</td><td><a href="#m0">quitDriver</a></td><td rowspan="1">1620590451623</td><td rowspan="1">4</td></tr><tr><th colspan="4">NewAccount &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCases.RegisterNewAccount</td><td><a href="#m1">CreateAccount</a></td><td rowspan="2">1620590432394</td><td rowspan="2">13352</td></tr><tr class="failedeven"><td><a href="#m2">CreateAccount</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">DemoTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.WelcomeTest</td><td><a href="#m3">demoTest</a></td><td rowspan="1">1620590451715</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>NewAccount</h2><h3 id="m0">testCases.RegisterNewAccount#CreateAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{AddressLine1=Street1, PhoneNo=1233452298, FirstName=Mohan, State=Georgia, ZipCode=31901, LastName=Sharma, City=Columbus, Flag=Yes, EmailAddress=test31@mail.com, Password=hello123}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.RegisterNewAccount#CreateAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{AddressLine1=Street1, PhoneNo=1233452298, FirstName=Ram, State=Georgia, ZipCode=31901, LastName=Sharma, City=Columbus, Flag=Yes, EmailAddress=test30@mail.com, Password=hello123}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>NewAccount</h2><h3 id="m0">testCases.RegisterNewAccount#quitDriver</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=CreateAccount status=FAILURE method=RegisterNewAccount.CreateAccount(java.util.Map)[pri:0, instance:testCases.RegisterNewAccount@67080771] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-SPPI0K5&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Sharm\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54971}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 660f6a0c86d0a2a055cdc8d13a4e0481
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at GUIUtils.Misc.captureScreenShot(Misc.java:17)
+	at GUIBase.Base.quitDriver(Base.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.RegisterNewAccount#CreateAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{AddressLine1=Street1, PhoneNo=1233452298, FirstName=Ram, State=Georgia, ZipCode=31901, LastName=Sharma, City=Columbus, Flag=Yes, EmailAddress=test30@mail.com, Password=hello123}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;id_gender1&apos;]&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-SPPI0K5&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Sharm\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54928}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 17f3e50d048811a901a698f59f5e3754
+*** Element info: {Using=xpath, value=//input[@id=&apos;id_gender1&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.automationpractice.functions.AccountFunctions.fillDataInNewAccountPage(AccountFunctions.java:52)
+	at testCases.RegisterNewAccount.CreateAccount(RegisterNewAccount.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.RegisterNewAccount#CreateAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{AddressLine1=Street1, PhoneNo=1233452298, FirstName=Mohan, State=Georgia, ZipCode=31901, LastName=Sharma, City=Columbus, Flag=Yes, EmailAddress=test31@mail.com, Password=hello123}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-SPPI0K5&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Sharm\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54971}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 660f6a0c86d0a2a055cdc8d13a4e0481
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at GUIUtils.Misc.captureScreenShot(Misc.java:17)
+	at com.automationpractice.functions.AccountFunctions.navigateToCreateAccountPage(AccountFunctions.java:28)
+	at testCases.RegisterNewAccount.CreateAccount(RegisterNewAccount.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>DemoTest</h2><h3 id="m3">testCases.WelcomeTest#demoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
