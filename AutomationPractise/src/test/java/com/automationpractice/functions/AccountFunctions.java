@@ -21,9 +21,12 @@ public class AccountFunctions
 	//Navigate to Account Page
 	public static void navigateToCreateAccountPage(WebDriver driver,ExtentTest reportMessage,Map<Object,Object>testData) throws IOException
 	{
-		String emailAddress=(String) testData.get("EmailAddress");
-		
-		
+		//String emailAddress=(String) testData.get("EmailAddress");
+		 int min = 1;
+	      int max = 100;
+	        
+	      int random_int = (int)Math.floor(Math.random()*(max-min+1)+min);
+		String emailAddress="Test_"+random_int+"@email.com";
 		HomePage hp=new HomePage(driver);
 		reportMessage.log(Status.INFO, "Sign in link is clicked",MediaEntityBuilder.createScreenCaptureFromPath(Misc.captureScreenShot(driver)).build());
 		hp.getSignin().click();
